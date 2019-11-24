@@ -1,6 +1,11 @@
 import React from 'react';
 import { Header, Footer } from '../';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { createStyles, withStyles } from '@material-ui/core';
+import useStyles from './useStyles';
+import { AppProps } from './App.interface';
+
+import Welcome from '../../routes/Welcome';
 
 const globalStyles = createStyles({
   // Basic CSS reset for HTML
@@ -21,15 +26,19 @@ const globalStyles = createStyles({
   }
 });
 
-export interface AppProps {
-  logo?: string
-}
-
-const App: React.FC<AppProps> = ({ logo }) => (
-  <>
-    <Header logo={logo} />
-    <Footer />
-  </>
-);
+const App: React.FC<AppProps> = ({ logo }) => {
+  const classes = useStyles();
+  return (
+    <Router>
+      <Header logo={logo} />
+        <main className={classes.main}>
+          <Route path="/" exact={true}>
+            <Welcome />
+          </Route>
+        </main>
+      <Footer />
+    </Router>
+  );
+};
 
 export default withStyles(globalStyles)(App);
