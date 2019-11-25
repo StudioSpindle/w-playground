@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '../../test-utils';
-import App from './App';
+import Footer from './Footer';
 
 it('matches snapshot', () => {
-  const container = render(<App />);
+  const container = render(<Footer />);
   expect(container).toMatchSnapshot();
 });

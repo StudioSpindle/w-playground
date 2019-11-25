@@ -1,0 +1,454 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        class="MuiPaper-root MuiPaper-elevation1 MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-dense MuiToolbar-gutters"
+        >
+          <img
+            alt="Logo"
+            class="makeStyles-logo-2"
+          />
+        </div>
+      </header>
+      <main
+        class="makeStyles-main-1"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-147"
+          >
+            <h1
+              class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom MuiTypography-alignCenter"
+            >
+              Welcome to the 
+              <br />
+              Weaviate Playground
+            </h1>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root-178"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiTypography-alignCenter"
+            >
+              This is the GUI on top of the decentralised knowledge graph
+               
+              <a
+                href="https://github.com/semi-technologies/weaviate"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Weaviate
+              </a>
+              . For more information or documentation visit the
+               
+              <a
+                href="https://github.com/semi-technologies/weaviate/blob/master/docs/en/use/weaviate-playground.md"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Weaviate Playground documentation
+              </a>
+               
+              on Github.
+            </p>
+          </div>
+          <form
+            id="formAddWeaviate"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-180"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-181"
+              >
+                <div
+                  class="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiFormControl-root MuiTextField-root makeStyles-input-179"
+                  >
+                    <label
+                      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated Mui-required Mui-required"
+                      data-shrink="false"
+                      for="weaviateUri"
+                      id="weaviateUri-label"
+                    >
+                      Weaviate URL
+                      <span
+                        class="MuiFormLabel-asterisk MuiInputLabel-asterisk"
+                      >
+                         
+                        *
+                      </span>
+                    </label>
+                    <div
+                      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+                    >
+                      <input
+                        aria-describedby="weaviateUri-helper-text"
+                        aria-invalid="false"
+                        autocomplete="weaviateUri"
+                        class="MuiInputBase-input MuiInput-input"
+                        id="weaviateUri"
+                        name="weaviateUri"
+                        required=""
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                    <p
+                      class="MuiFormHelperText-root Mui-required"
+                      id="weaviateUri-helper-text"
+                    >
+                      i.e. http://localhost:8080/weaviate/v1/graphql
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiBox-root MuiBox-root-249"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeSmall MuiButton-sizeSmall"
+                  tabindex="0"
+                  type="submit"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    Connect Weaviate
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer
+        class="makeStyles-footer-281"
+      >
+        <hr
+          class="MuiDivider-root"
+        />
+        <div
+          class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-289"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-290"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1"
+              >
+                Weaviate Playground BETA
+              </p>
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root-291"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1"
+              >
+                <a
+                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                  href="https://stackoverflow.com/questions/tagged/weaviate"
+                  target="_blank"
+                >
+                  request help
+                </a>
+              </p>
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root-298"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1"
+              >
+                <a
+                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                  href="https://github.com/semi-technologies/weaviate-playground/issues"
+                  target="_blank"
+                >
+                  report an issue
+                </a>
+              </p>
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root-299 makeStyles-copyright-282"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1"
+              >
+                Copyright © 2019 SeMI Technologies B.V. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="MuiPaper-root MuiPaper-elevation1 MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-dense MuiToolbar-gutters"
+      >
+        <img
+          alt="Logo"
+          class="makeStyles-logo-2"
+        />
+      </div>
+    </header>
+    <main
+      class="makeStyles-main-1"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-147"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom MuiTypography-alignCenter"
+          >
+            Welcome to the 
+            <br />
+            Weaviate Playground
+          </h1>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root-178"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiTypography-alignCenter"
+          >
+            This is the GUI on top of the decentralised knowledge graph
+             
+            <a
+              href="https://github.com/semi-technologies/weaviate"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Weaviate
+            </a>
+            . For more information or documentation visit the
+             
+            <a
+              href="https://github.com/semi-technologies/weaviate/blob/master/docs/en/use/weaviate-playground.md"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Weaviate Playground documentation
+            </a>
+             
+            on Github.
+          </p>
+        </div>
+        <form
+          id="formAddWeaviate"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-180"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-181"
+            >
+              <div
+                class="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth"
+              >
+                <div
+                  class="MuiFormControl-root MuiTextField-root makeStyles-input-179"
+                >
+                  <label
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated Mui-required Mui-required"
+                    data-shrink="false"
+                    for="weaviateUri"
+                    id="weaviateUri-label"
+                  >
+                    Weaviate URL
+                    <span
+                      class="MuiFormLabel-asterisk MuiInputLabel-asterisk"
+                    >
+                       
+                      *
+                    </span>
+                  </label>
+                  <div
+                    class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+                  >
+                    <input
+                      aria-describedby="weaviateUri-helper-text"
+                      aria-invalid="false"
+                      autocomplete="weaviateUri"
+                      class="MuiInputBase-input MuiInput-input"
+                      id="weaviateUri"
+                      name="weaviateUri"
+                      required=""
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <p
+                    class="MuiFormHelperText-root Mui-required"
+                    id="weaviateUri-helper-text"
+                  >
+                    i.e. http://localhost:8080/weaviate/v1/graphql
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root-249"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeSmall MuiButton-sizeSmall"
+                tabindex="0"
+                type="submit"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Connect Weaviate
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer
+      class="makeStyles-footer-281"
+    >
+      <hr
+        class="MuiDivider-root"
+      />
+      <div
+        class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-289"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-290"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              Weaviate Playground BETA
+            </p>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root-291"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              <a
+                class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                href="https://stackoverflow.com/questions/tagged/weaviate"
+                target="_blank"
+              >
+                request help
+              </a>
+            </p>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root-298"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              <a
+                class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                href="https://github.com/semi-technologies/weaviate-playground/issues"
+                target="_blank"
+              >
+                report an issue
+              </a>
+            </p>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root-299 makeStyles-copyright-282"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              Copyright © 2019 SeMI Technologies B.V. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
