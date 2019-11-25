@@ -1,15 +1,15 @@
 import React from 'react';
-import { Header, Footer } from '../';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { createStyles, withStyles } from '@material-ui/core';
+import { Header, Footer } from '..';
 import useStyles from './useStyles';
 import { TypeLogo } from '../shared.types';
+
+import Welcome from '../../routes/Welcome';
 
 export interface AppProps {
   logo?: TypeLogo;
 }
-
-import Welcome from '../../routes/Welcome';
 
 const globalStyles = createStyles({
   // Basic CSS reset for HTML
@@ -18,16 +18,16 @@ const globalStyles = createStyles({
       boxSizing: 'inherit',
       margin: 0,
       padding: 0,
-      verticalAlign: 'baseline'
+      verticalAlign: 'baseline',
     },
     // Make the app full height
     'body, #root': {
       display: 'flex',
       flexDirection: 'column',
       margin: 0,
-      minHeight: '100vh'
+      minHeight: '100vh',
     },
-  }
+  },
 });
 
 const App: React.FC<AppProps> = ({ logo }) => {
@@ -35,11 +35,11 @@ const App: React.FC<AppProps> = ({ logo }) => {
   return (
     <Router>
       <Header logo={logo} />
-        <main className={classes.main}>
-          <Route path="/" exact={true}>
-            <Welcome />
-          </Route>
-        </main>
+      <main className={classes.main}>
+        <Route path="/" exact>
+          <Welcome />
+        </Route>
+      </main>
       <Footer />
     </Router>
   );

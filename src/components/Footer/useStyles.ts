@@ -2,11 +2,11 @@ import { makeStyles, createStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles(() => createStyles({
   footer: {
-    marginTop: 'auto'
+    marginTop: 'auto',
   },
   copyright: {
-    marginLeft: 'auto'
-  }
+    marginLeft: 'auto',
+  },
 }));
 
 export default useStyles;

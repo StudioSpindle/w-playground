@@ -13,11 +13,7 @@ const Header: React.FC<HeaderProps> = ({ logo }) => {
   return (
     <AppBar position="static" elevation={1}>
       <Toolbar variant="dense">
-        <img
-          className={classes.logo}
-          src={logo}
-          alt="Logo"
-        />
+        <img className={classes.logo} src={logo} alt="Logo" />
       </Toolbar>
     </AppBar>
   );

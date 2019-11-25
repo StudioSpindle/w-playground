@@ -1,20 +1,24 @@
-import React from 'react';
-import { FormControl, TextField, Button, Box } from '@material-ui/core';
+import React, { ChangeEvent, FormEvent } from 'react';
+import {
+  FormControl, TextField, Button, Box,
+} from '@material-ui/core';
 import useStyles from './useStyles';
-import { ChangeEvent, FormEvent }  from 'react';
 
 export interface FormAddWeaviateUrlProps {
   handleUrlChange: (event: ChangeEvent<HTMLInputElement>) => void;
   handleSubmit: (event: FormEvent<HTMLFormElement>) => void;
 }
 
-const FormAddWeaviate: React.FC<FormAddWeaviateUrlProps> = ({ handleSubmit, handleUrlChange }) => {
+const FormAddWeaviate: React.FC<FormAddWeaviateUrlProps> = ({
+  handleSubmit,
+  handleUrlChange,
+}) => {
   const classes = useStyles();
   return (
     <form id="formAddWeaviate" onSubmit={handleSubmit}>
       <Box display="flex" flexDirection="row" flexGrow="1">
         <Box alignSelf="center" p={1}>
-          <FormControl margin="normal" required={true} fullWidth={true}>
+          <FormControl margin="normal" required fullWidth>
             <TextField
               required
               label="Weaviate URL"
