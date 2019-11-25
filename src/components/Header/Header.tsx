@@ -2,7 +2,11 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import useStyles from './useStyles';
-import { HeaderProps } from './Header.interface';
+import { TypeLogo } from '../shared.types';
+
+export interface HeaderProps {
+  logo?: TypeLogo;
+}
 
 const Header: React.FC<HeaderProps> = ({ logo }) => {
   const classes = useStyles();

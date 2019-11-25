@@ -3,7 +3,11 @@ import { Header, Footer } from '../';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { createStyles, withStyles } from '@material-ui/core';
 import useStyles from './useStyles';
-import { AppProps } from './App.interface';
+import { TypeLogo } from '../shared.types';
+
+export interface AppProps {
+  logo?: TypeLogo;
+}
 
 import Welcome from '../../routes/Welcome';
 
