@@ -4,11 +4,14 @@ import ReactDOM from 'react-dom';
 import { App } from './components';
 import * as serviceWorker from './serviceWorker';
 import themeSpec from './themes/default';
+import { PlaygroundProvider } from './playground-context';
 
 ReactDOM.render(
-  <MuiThemeProvider theme={themeSpec.theme}>
-    <App logo={themeSpec.logo} />
-  </MuiThemeProvider>,
+  <PlaygroundProvider>
+    <MuiThemeProvider theme={themeSpec.theme}>
+      <App logo={themeSpec.logo} />
+    </MuiThemeProvider>
+  </PlaygroundProvider>,
   document.getElementById('root')
 );
 
