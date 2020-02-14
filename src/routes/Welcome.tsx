@@ -1,10 +1,25 @@
 import React from 'react';
 import { Grid, Typography, Box } from '@material-ui/core';
+import { useHistory } from 'react-router-dom';
 import { FormAddWeaviate } from '../components';
+import { usePlaygroundDispatch } from '../playground-context';
 
 const Welcome: React.FC = () => {
+  const history = useHistory();
+  const dispatch = usePlaygroundDispatch();
+
   const handleUrlChange = (): void => {};
-  const handleSubmit = (): void => {};
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
+    const { value }: { value: string } = (event.target as HTMLFormElement).weaviateUri;
+
+    if (value) {
+      // store graphql uri
+      dispatch({ type: 'setWeaviateUri', data: value });
+      // redirect to /canvas
+      history.push('/canvas');
+    }
+  };
 
   return (
     <Grid container direction="column" justify="center" alignItems="center">

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { createStyles, withStyles } from '@material-ui/core';
-import { Header, Footer } from '..';
+import { Header, Footer, Canvas } from '..';
 import useStyles from './useStyles';
 import { TypeLogo } from '../shared.types';
 
@@ -38,6 +38,9 @@ const App: React.FC<AppProps> = ({ logo }) => {
       <main className={classes.main}>
         <Route path="/" exact>
           <Welcome />
+        </Route>
+        <Route path="/canvas">
+          <Canvas />
         </Route>
       </main>
       <Footer />
