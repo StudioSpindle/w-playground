@@ -110,7 +110,7 @@ Object {
                       class="MuiFormHelperText-root Mui-required"
                       id="weaviateUri-helper-text"
                     >
-                      i.e. http://localhost:8080/weaviate/v1/graphql
+                      i.e. http://localhost:8080/v1/graphql
                     </p>
                   </div>
                 </div>
@@ -308,7 +308,7 @@ Object {
                     class="MuiFormHelperText-root Mui-required"
                     id="weaviateUri-helper-text"
                   >
-                    i.e. http://localhost:8080/weaviate/v1/graphql
+                    i.e. http://localhost:8080/v1/graphql
                   </p>
                 </div>
               </div>

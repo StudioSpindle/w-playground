@@ -23,7 +23,7 @@ const FormAddWeaviate: React.FC<FormAddWeaviateUrlProps> = ({ handleSubmit, hand
               autoComplete="weaviateUri"
               onChange={handleUrlChange}
               className={classes.input}
-              helperText="i.e. http://localhost:8080/weaviate/v1/graphql"
+              helperText="i.e. http://localhost:8080/v1/graphql"
             />
           </FormControl>
         </Box>
