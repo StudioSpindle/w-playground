@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Toolbar, Link, Typography, Divider, Box,
-} from '@material-ui/core';
+import { Toolbar, Link, Typography, Divider, Box } from '@material-ui/core';
 import useStyles from './useStyles';
 
 const Footer: React.FC = () => {
@@ -16,10 +14,7 @@ const Footer: React.FC = () => {
           </Box>
           <Box p={1}>
             <Typography>
-              <Link
-                href="https://stackoverflow.com/questions/tagged/weaviate"
-                target="_blank"
-              >
+              <Link href="https://stackoverflow.com/questions/tagged/weaviate" target="_blank">
                 request help
               </Link>
             </Typography>
@@ -35,9 +30,7 @@ const Footer: React.FC = () => {
             </Typography>
           </Box>
           <Box p={1} className={classes.copyright}>
-            <Typography>
-              Copyright © 2019 SeMI Technologies B.V. All Rights Reserved.
-            </Typography>
+            <Typography>Copyright © 2019 SeMI Technologies B.V. All Rights Reserved.</Typography>
           </Box>
         </Box>
       </Toolbar>

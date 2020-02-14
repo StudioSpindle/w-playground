@@ -20,8 +20,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "lint": "eslint './src/**/*.{ts,tsx}'"
+    "test": "react-scripts test --coverage",
+    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "format": "prettier './src/**/*.{js,json,ts,tsx}' --write"
   },
   "eslintConfig": {
     "extends": "react-app"

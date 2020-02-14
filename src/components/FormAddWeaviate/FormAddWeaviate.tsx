@@ -1,7 +1,5 @@
 import React, { ChangeEvent, FormEvent } from 'react';
-import {
-  FormControl, TextField, Button, Box,
-} from '@material-ui/core';
+import { FormControl, TextField, Button, Box } from '@material-ui/core';
 import useStyles from './useStyles';
 
 export interface FormAddWeaviateUrlProps {
@@ -9,10 +7,7 @@ export interface FormAddWeaviateUrlProps {
   handleSubmit: (event: FormEvent<HTMLFormElement>) => void;
 }
 
-const FormAddWeaviate: React.FC<FormAddWeaviateUrlProps> = ({
-  handleSubmit,
-  handleUrlChange,
-}) => {
+const FormAddWeaviate: React.FC<FormAddWeaviateUrlProps> = ({ handleSubmit, handleUrlChange }) => {
   const classes = useStyles();
   return (
     <form id="formAddWeaviate" onSubmit={handleSubmit}>

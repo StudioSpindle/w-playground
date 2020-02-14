@@ -29,8 +29,7 @@ Object {
             <h1
               class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom MuiTypography-alignCenter"
             >
-              Welcome to the
-               
+              Welcome to the 
               <br />
               Weaviate Playground
             </h1>
@@ -228,8 +227,7 @@ Object {
           <h1
             class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom MuiTypography-alignCenter"
           >
-            Welcome to the
-             
+            Welcome to the 
             <br />
             Weaviate Playground
           </h1>

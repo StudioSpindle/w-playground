@@ -18,16 +18,16 @@ const globalStyles = createStyles({
       boxSizing: 'inherit',
       margin: 0,
       padding: 0,
-      verticalAlign: 'baseline',
+      verticalAlign: 'baseline'
     },
     // Make the app full height
     'body, #root': {
       display: 'flex',
       flexDirection: 'column',
       margin: 0,
-      minHeight: '100vh',
-    },
-  },
+      minHeight: '100vh'
+    }
+  }
 });
 
 const App: React.FC<AppProps> = ({ logo }) => {
