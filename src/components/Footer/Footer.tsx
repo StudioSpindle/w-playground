@@ -10,17 +10,17 @@ const Footer: React.FC = () => {
       <Toolbar>
         <Box display="flex" flexDirection="row" flexGrow="1">
           <Box p={1}>
-            <Typography>Weaviate Playground BETA</Typography>
+            <Typography variant="body2">Weaviate Playground BETA</Typography>
           </Box>
           <Box p={1}>
-            <Typography>
+            <Typography variant="body2">
               <Link href="https://stackoverflow.com/questions/tagged/weaviate" target="_blank">
                 request help
               </Link>
             </Typography>
           </Box>
           <Box p={1}>
-            <Typography>
+            <Typography variant="body2">
               <Link
                 href="https://github.com/semi-technologies/weaviate-playground/issues"
                 target="_blank"
@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
             </Typography>
           </Box>
           <Box p={1} className={classes.copyright}>
-            <Typography>Copyright © 2019 SeMI Technologies B.V. All Rights Reserved.</Typography>
+            <Typography variant="body2">Copyright © 2019 SeMI Technologies B.V. All Rights Reserved.</Typography>
           </Box>
         </Box>
       </Toolbar>

@@ -62,7 +62,7 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: ['Alegreya Sans', 'Helvetica', 'Arial', 'sans-serif'].join(','),
-    fontSize: 20,
+    fontSize: 16,
     fontWeightLight: 300,
     fontWeightRegular: 400,
     fontWeightMedium: 500,
@@ -70,7 +70,7 @@ const theme = createMuiTheme({
       color: 'rgba(0, 0, 0, 0.87)',
       fontFamily: ['Alegreya Sans', 'Helvetica', 'Arial', 'sans-serif'].join(','),
       fontWeight: 700,
-      fontSize: '3.5rem',
+      fontSize: '4.375rem',
       lineHeight: 1.2,
       letterSpacing: '-0.01562em'
     },
@@ -78,7 +78,7 @@ const theme = createMuiTheme({
       color: 'rgba(0, 0, 0, 0.87)',
       fontFamily: ['Alegreya Sans', 'Helvetica', 'Arial', 'sans-serif'].join(','),
       fontWeight: 300,
-      fontSize: '1.875rem',
+      fontSize: '2.375rem',
       lineHeight: 1,
       letterSpacing: '-0.00833em'
     },
@@ -86,7 +86,7 @@ const theme = createMuiTheme({
       color: 'rgba(0, 0, 0, 0.87)',
       fontFamily: ['Alegreya Sans', 'Helvetica', 'Arial', 'sans-serif'].join(','),
       fontWeight: 400,
-      fontSize: '1.5rem',
+      fontSize: '1.875rem',
       lineHeight: 1.04,
       letterSpacing: '0em'
     },
@@ -94,7 +94,7 @@ const theme = createMuiTheme({
       color: 'rgba(0, 0, 0, 0.87)',
       fontFamily: ['Alegreya Sans', 'Helvetica', 'Arial', 'sans-serif'].join(','),
       fontWeight: 400,
-      fontSize: '1.35rem',
+      fontSize: '1.75rem',
       lineHeight: 1.17,
       letterSpacing: '0.00735em'
     },
@@ -102,7 +102,7 @@ const theme = createMuiTheme({
       color: 'rgba(0, 0, 0, 0.87)',
       fontFamily: ['Alegreya Sans', 'Helvetica', 'Arial', 'sans-serif'].join(','),
       fontWeight: 400,
-      fontSize: '1.25rem',
+      fontSize: '1.625rem',
       lineHeight: 1.33,
       letterSpacing: '0em'
     },
@@ -110,7 +110,7 @@ const theme = createMuiTheme({
       color: 'rgba(0, 0, 0, 0.87)',
       fontFamily: ['Alegreya Sans', 'Helvetica', 'Arial', 'sans-serif'].join(','),
       fontWeight: 500,
-      fontSize: '1.25rem',
+      fontSize: '1.625rem',
       lineHeight: 1.6,
       letterSpacing: '0.0075em'
     },
@@ -131,14 +131,14 @@ const theme = createMuiTheme({
       letterSpacing: '0.00714em'
     },
     body1: {
-      fontSize: '1rem',
+      fontSize: '1.25rem',
       fontWeight: 400,
       fontFamily: ['Alegreya Sans', 'Helvetica', 'Arial', 'sans-serif'].join(','),
       lineHeight: '1.46429em',
       color: 'rgba(0, 0, 0, 0.87)'
     },
     body2: {
-      fontSize: '0.875rem',
+      fontSize: '1rem',
       fontWeight: 500,
       fontFamily: ['Alegreya Sans', 'Helvetica', 'Arial', 'sans-serif'].join(','),
       lineHeight: '1.71429em',
@@ -162,7 +162,22 @@ const theme = createMuiTheme({
   shape: {
     borderRadius: 8
   },
-  overrides: {}
+  overrides: {
+    MuiExpansionPanelSummary: {
+      root: {
+        '&$expanded': {
+          minHeight: '48px',
+          padding: '0 1rem'
+        }
+      },
+      content: {
+        margin: 0,
+        '&$expanded': {
+          margin: 0
+        }
+      }
+    }
+  }
 });
 
 export default {
