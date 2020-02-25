@@ -3,21 +3,31 @@ import { Grid, Typography, Box } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import { FormAddWeaviate } from '../components';
 import { usePlaygroundDispatch } from '../playground-context';
+import { createApiHeaders } from '../apis/ApiWeaviate';
 
 const Welcome: React.FC = () => {
   const history = useHistory();
   const dispatch = usePlaygroundDispatch();
 
-  const handleUrlChange = (): void => {};
-
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
-    const { value }: { value: string } = (event.target as HTMLFormElement).weaviateUri;
+    const { value: url }: { value: string } = (event.target as HTMLFormElement).weaviateUri;
 
-    if (value) {
-      // store graphql uri
-      dispatch({ type: 'setWeaviateUri', data: value });
-      // redirect to /canvas
-      history.push('/canvas');
+    if (url) {
+      const apiUrl = url.replace(/v1\/graphql/, '');
+      event.preventDefault();
+      fetch(`${apiUrl}/v1/graphql`, {
+        method: 'POST',
+        headers: createApiHeaders(),
+        body: JSON.stringify({ query: `{ Get }` })
+      })
+        .then(resp => {
+          // Only continue if a graphql is found at the given URL
+          if (resp.ok) {
+            dispatch({ type: 'setWeaviateUri', data: `${apiUrl}/v1/graphql` });
+            history.push('/canvas');
+          }
+        })
+        .catch();
     }
   };
 
@@ -50,7 +60,7 @@ const Welcome: React.FC = () => {
           on Github.
         </Typography>
       </Box>
-      <FormAddWeaviate handleUrlChange={handleUrlChange} handleSubmit={handleSubmit} />
+      <FormAddWeaviate handleSubmit={handleSubmit} />
     </Grid>
   );
 };

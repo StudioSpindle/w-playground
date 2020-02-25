@@ -1,26 +1,39 @@
 import React from 'react';
 
-type Action = { type: 'setWeaviateUri' | 'removeWeaviateUri'; data: string };
-type Dispatch = (action: Action) => void;
-type State = { uri?: string };
+interface ActionSet {
+  type?: 'setWeaviateUri';
+  data: string;
+}
+
+interface ActionRemove {
+  type?: 'removeWeaviateUri';
+}
+
+type ActionTypes = ActionSet | ActionRemove;
+type Dispatch = (action: ActionTypes) => void;
+type State = { uri?: string; isLoggedIn?: boolean };
 type PlaygroundProviderProps = { children: React.ReactNode };
 
 const PlaygroundStateContext = React.createContext<State | undefined>(undefined);
 const PlaygroundDispatchContext = React.createContext<Dispatch | undefined>(undefined);
 
-function globalReducer(state: State, action: Action): State {
+function globalReducer(state: State, action: ActionTypes): State {
   switch (action.type) {
     case 'setWeaviateUri': {
       localStorage.setItem('weaviateUri', action.data);
+      localStorage.setItem('isLoggedIn', 'true');
       return {
         ...state,
+        isLoggedIn: true,
         uri: action.data
       };
     }
     case 'removeWeaviateUri': {
       localStorage.removeItem('weaviateUri');
+      localStorage.removeItem('isLoggedIn');
       return {
         ...state,
+        isLoggedIn: undefined,
         uri: undefined
       };
     }
@@ -31,7 +44,10 @@ function globalReducer(state: State, action: Action): State {
 }
 
 function PlaygroundProvider({ children }: PlaygroundProviderProps): JSX.Element {
-  const [state, dispatch] = React.useReducer(globalReducer, { uri: undefined });
+  const [state, dispatch] = React.useReducer(globalReducer, {
+    uri: localStorage.getItem('weaviateUri') || undefined,
+    isLoggedIn: localStorage.getItem('isLoggedIn') === 'true' || undefined
+  });
 
   return (
     <PlaygroundStateContext.Provider value={state}>

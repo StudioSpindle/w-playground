@@ -3,8 +3,8 @@ import { Redirect } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 import { makeStyles } from '@material-ui/core';
-import Library from '../components/Library/Library';
-import Section from '../components/Section/Section';
+import { Library, Section } from '../components';
+
 
 const useStyles = makeStyles(() => ({
   aside: {

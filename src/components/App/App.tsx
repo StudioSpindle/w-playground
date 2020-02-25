@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import { createStyles, withStyles } from '@material-ui/core';
-import { Header, Footer, Canvas } from '..';
+import { Header, Footer, Canvas, GraphiQLContainer } from '..';
 import useStyles from './useStyles';
+import { usePlaygroundState } from '../../playground-context';
 import { TypeLogo } from '../shared.types';
 
 import Welcome from '../../routes/Welcome';
@@ -32,6 +33,7 @@ const globalStyles = createStyles({
 
 const App: React.FC<AppProps> = ({ logo }) => {
   const classes = useStyles();
+  const { isLoggedIn } = usePlaygroundState();
   return (
     <Router>
       <Header logo={logo} />
@@ -39,9 +41,18 @@ const App: React.FC<AppProps> = ({ logo }) => {
         <Route path="/" exact>
           <Welcome />
         </Route>
-        <Route path="/canvas">
-          <Canvas />
-        </Route>
+        {isLoggedIn ? (
+          <>
+            <Route path="/canvas">
+              <Canvas />
+            </Route>
+            <Route path="/graphiql">
+              <GraphiQLContainer />
+            </Route>
+          </>
+        ) : (
+          <Redirect to="/" />
+        )}
       </main>
       <Footer />
     </Router>
