@@ -9,12 +9,47 @@ Object {
         class="MuiPaper-root MuiPaper-elevation1 MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary"
       >
         <div
-          class="MuiToolbar-root MuiToolbar-dense MuiToolbar-gutters"
+          class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
         >
-          <img
-            alt="Logo"
-            class="makeStyles-logo-1"
-          />
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <a
+                    aria-current="page"
+                    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary active"
+                    href="/"
+                  >
+                    <img
+                      alt="Logo"
+                      class="makeStyles-logo-1"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-184"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiTypography-colorInherit"
+                    >
+                      (BETA)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
     </div>
@@ -24,12 +59,47 @@ Object {
       class="MuiPaper-root MuiPaper-elevation1 MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary"
     >
       <div
-        class="MuiToolbar-root MuiToolbar-dense MuiToolbar-gutters"
+        class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
       >
-        <img
-          alt="Logo"
-          class="makeStyles-logo-1"
-        />
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item"
+              >
+                <a
+                  aria-current="page"
+                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary active"
+                  href="/"
+                >
+                  <img
+                    alt="Logo"
+                    class="makeStyles-logo-1"
+                  />
+                </a>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-184"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiTypography-colorInherit"
+                  >
+                    (BETA)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
   </div>,

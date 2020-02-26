@@ -1,20 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Grid, Typography, Box } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import { FormAddWeaviate } from '../components';
 import { usePlaygroundDispatch } from '../playground-context';
 import { createApiHeaders } from '../apis/ApiWeaviate';
 
+const subStyle = {
+  fontSize: '1.5rem',
+  fontStyle: 'italic'
+};
+
 const Welcome: React.FC = () => {
+  const [hasError, setHasError] = useState(false);
   const history = useHistory();
   const dispatch = usePlaygroundDispatch();
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
-    const { value: url }: { value: string } = (event.target as HTMLFormElement).weaviateUri;
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    const weaviateUri = data.get('weaviateUri') as string;
 
-    if (url) {
-      const apiUrl = url.replace(/v1\/graphql/, '');
-      event.preventDefault();
+    if (weaviateUri) {
+      const apiUrl = weaviateUri.replace(/v1\/graphql/, '');
       fetch(`${apiUrl}/v1/graphql`, {
         method: 'POST',
         headers: createApiHeaders(),
@@ -26,8 +33,11 @@ const Welcome: React.FC = () => {
             dispatch({ type: 'setWeaviateUri', data: `${apiUrl}/v1/graphql` });
             history.push('/canvas');
           }
+          setHasError(true);
         })
-        .catch();
+        .catch(() => {
+          setHasError(true);
+        });
     }
   };
 
@@ -36,7 +46,7 @@ const Welcome: React.FC = () => {
       <Box mb={2}>
         <Typography variant="h1" component="h1" align="center" gutterBottom>
           Welcome to the <br />
-          Weaviate Playground
+          Weaviate Playground<sub style={subStyle}>beta</sub>
         </Typography>
       </Box>
       <Box maxWidth="600px">
@@ -60,7 +70,7 @@ const Welcome: React.FC = () => {
           on Github.
         </Typography>
       </Box>
-      <FormAddWeaviate handleSubmit={handleSubmit} />
+      <FormAddWeaviate hasError={hasError} handleSubmit={handleSubmit} />
     </Grid>
   );
 };

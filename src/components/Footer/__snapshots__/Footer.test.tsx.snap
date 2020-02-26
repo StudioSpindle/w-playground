@@ -12,58 +12,57 @@ Object {
           class="MuiDivider-root"
         />
         <div
-          class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+          class="MuiToolbar-root MuiToolbar-regular makeStyles-toolbar-2 MuiToolbar-gutters"
         >
           <div
-            class="MuiBox-root MuiBox-root-14"
+            class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
           >
             <div
-              class="MuiBox-root MuiBox-root-15"
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-auto"
             >
               <p
-                class="MuiTypography-root MuiTypography-body1"
-              >
-                Weaviate Playground BETA
-              </p>
-            </div>
-            <div
-              class="MuiBox-root MuiBox-root-46"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1"
-              >
-                <a
-                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                  href="https://stackoverflow.com/questions/tagged/weaviate"
-                  target="_blank"
-                >
-                  request help
-                </a>
-              </p>
-            </div>
-            <div
-              class="MuiBox-root MuiBox-root-53"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1"
-              >
-                <a
-                  class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                  href="https://github.com/semi-technologies/weaviate-playground/issues"
-                  target="_blank"
-                >
-                  report an issue
-                </a>
-              </p>
-            </div>
-            <div
-              class="MuiBox-root MuiBox-root-54 makeStyles-copyright-2"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1"
+                class="MuiTypography-root makeStyles-footerItem-3 MuiTypography-body2"
               >
                 Copyright © 2019 SeMI Technologies B.V. All Rights Reserved.
               </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-auto"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-footerItem-3 MuiTypography-body2"
+                  >
+                    <a
+                      class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                      href="https://stackoverflow.com/questions/tagged/weaviate"
+                      target="_blank"
+                    >
+                      request help
+                    </a>
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-footerItem-3 MuiTypography-body2"
+                  >
+                    <a
+                      class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                      href="https://github.com/semi-technologies/weaviate-playground/issues"
+                      target="_blank"
+                    >
+                      report an issue
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -78,58 +77,57 @@ Object {
         class="MuiDivider-root"
       />
       <div
-        class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+        class="MuiToolbar-root MuiToolbar-regular makeStyles-toolbar-2 MuiToolbar-gutters"
       >
         <div
-          class="MuiBox-root MuiBox-root-14"
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
         >
           <div
-            class="MuiBox-root MuiBox-root-15"
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-auto"
           >
             <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-              Weaviate Playground BETA
-            </p>
-          </div>
-          <div
-            class="MuiBox-root MuiBox-root-46"
-          >
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-              <a
-                class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                href="https://stackoverflow.com/questions/tagged/weaviate"
-                target="_blank"
-              >
-                request help
-              </a>
-            </p>
-          </div>
-          <div
-            class="MuiBox-root MuiBox-root-53"
-          >
-            <p
-              class="MuiTypography-root MuiTypography-body1"
-            >
-              <a
-                class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
-                href="https://github.com/semi-technologies/weaviate-playground/issues"
-                target="_blank"
-              >
-                report an issue
-              </a>
-            </p>
-          </div>
-          <div
-            class="MuiBox-root MuiBox-root-54 makeStyles-copyright-2"
-          >
-            <p
-              class="MuiTypography-root MuiTypography-body1"
+              class="MuiTypography-root makeStyles-footerItem-3 MuiTypography-body2"
             >
               Copyright © 2019 SeMI Technologies B.V. All Rights Reserved.
             </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-auto"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-footerItem-3 MuiTypography-body2"
+                >
+                  <a
+                    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                    href="https://stackoverflow.com/questions/tagged/weaviate"
+                    target="_blank"
+                  >
+                    request help
+                  </a>
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-footerItem-3 MuiTypography-body2"
+                >
+                  <a
+                    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+                    href="https://github.com/semi-technologies/weaviate-playground/issues"
+                    target="_blank"
+                  >
+                    report an issue
+                  </a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
